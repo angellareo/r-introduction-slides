@@ -1,0 +1,36 @@
+.sl1 h1 {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 10vw;
+  /*position: relative;*/
+  font-weight: 900;
+  text-transform: uppercase;
+  /*top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*position: absolute;*/
+  margin: 0; }
+  .sl1 h1:before, .sl1 h1:after {
+    content: attr(data-heading);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center; }
+  .sl1 h1:before {
+    clip-path: polygon(0 0, 100% 0%, 100% 39%, 0 67%);
+    color: #002b36;
+    text-shadow: 3px -2px 5px #002b36, -3px 3px 4px #002b36;
+    /*background: white;*/ }
+  .sl1 h1:after {
+    clip-path: polygon(0 0, 100% 0%, 100% 37%, 0 65%);
+    color: black;
+    animation: fracture 5s infinite ease; }
+
+@keyframes fracture {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translate(-20px, 2%); } }
+
+/*# sourceMappingURL=sl1.css.map */
